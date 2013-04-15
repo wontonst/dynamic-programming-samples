@@ -1,0 +1,25 @@
+*.class
+*~
+*.db
+*.orig
+
+.DS_Store
+
+build-impl.xml
+*.properties
+
+project.xml
+
+build
+nbproject
+build.xml
+manifest.mf
+.project
+.classpath
+bin/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
