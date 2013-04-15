@@ -1,5 +1,5 @@
 <?
-function autoload($className)
+function __autoload($className)
 {
   $className = ltrim($className, '\\');
   $fileName  = '';
@@ -11,6 +11,6 @@ function autoload($className)
   }
   $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
 
-  require $fileName;
+  require __DIR__.DIRECTORY_SEPARATOR.strtolower($fileName);
 }
 ?>
