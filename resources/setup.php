@@ -2,8 +2,8 @@
 
 interface Setup{
 
-  public function dynamic();
-  public function recursive();
-  public function debug();
+  public static function dynamic($param1=null);
+  public static function recursive($param2=null);
+  public static function debug();
 
 }
