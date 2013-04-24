@@ -8,7 +8,7 @@
 
 class Cashier_Setup implements Resources\Setup {
 
-    public static function recursive($target=null) {
+  public static function recursive($target=null,$target2=null,$target3=null) {
         if($target == 0)return 0;
         if($target < 0)return 100000000;
         $possible_solutions = array();
@@ -18,7 +18,7 @@ class Cashier_Setup implements Resources\Setup {
         }
         return min($possible_solutions);
     }
-    public static function dynamic($target=null) {
+    public static function dynamic($target=null,$target2=null,$target3=null) {
         $ref = array();
         $ref[0] = 0;
         for($i = 1; $i <= $target; $i++) {
